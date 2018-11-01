@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire de contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Formulaire de contact</h1>
+    <p>Veuillez remplir le formulaire de contact ci-dessous</p>
+
+    <section class="container">
+      <form class="custom-form" action="#" method="post">
+
+    <p class="firstName">
+      <label for="firstName">Prénom <sup>*</sup> :</label>
+      <input type="text" name="firstName" value="" id="firstName" placeholder="ex : Basile" required>
+    </p><br>
+
+    <p class="lastName">
+      <label for="lastName">Nom <sup>*</sup> :</label>
+      <input type="text" name="lastName" id="lastName" value="" placeholder="ex : Boli" required>
+    </p><br>
+    <p  class="radio-btn">
+        Genre<sup>*</sup> : <br>
+      <input type="radio" name="genre" required value="">
+      <label for="man">Homme</label> <br>
+      <input type="radio" name="genre"required value="">
+      <label for="woman">Femme</label> <br>
+      <input type="radio" name="genre" required value="">
+      <label for="other">Autre</label> <br>
+    </p> <br>
+
+    <p class="mail">
+      <label for="mail">Mail <sup>*</sup> :</label>
+      <input type="Mail" name="mail" id="mail" value="" placeholder="ex : BasileBoli@mail.com " required>
+    </p><br>
+    <p class="birthday">
+      <label for="born">Date de naissance <sup>*</sup> :</label>
+      <input type="date" name="born" id="born" value="" required>
+    </p>
+    <div class="clearfix">
+
+    </div>
+    </form>
+    </section>
+
+    <section class="container">
+<form class="custom-form2" action="#" method="post">
+  <p>
+  <label for="message">Commentaires</label><br>
+  <textarea name="message" id="message" rows="8" cols="80"></textarea>
+</p><br>
+  <p>
+    <label for="">Êtes vous motorisé ?</label>
+    <select class="" name="userChoice">
+      <option value="Sélectionez une option" disabled selected>Sélectionez une option</option>
+        <option value="yes">Oui</option>
+        <option value="no">Non</option>
+      </optgroup>
+      <optgroup label="Quel véhicule">
+        <option value="car">Voiture</option>
+        <option value="moto">Moto</option>
+        <option value="other">Autre</option>
+      </optgroup>
+    </select>
+  </p> <br>
+  <p>
+    Vous êtes<sup>*</sup> <br>
+    <input type="checkbox" name="choix" id="choix" required value="">
+    <label for="withoutJob">Sans Emploi</label> <br>
+    <input type="checkbox" name="choix" required value="">
+    <label for="student">Etudiant</label> <br>
+    <input type="checkbox" name="choix" required value="">
+    <label for="searchjob">A la recherche d'un travail</label> <br>
+    <input type="checkbox" name="choix" required value="">
+    <label for="retraité">Retraité</label> <br>
+    <input type="checkbox" name="choix" required value="">
+    <label for="cdi">En CDI</label>
+  </p><br>
+  <p>
+  <label for="envoyer-btn"></label>
+  <input type="submit" name="envoyer-btn" id="envoyer-btn" value="Envoyer le formulaire">
+</p>
+<div class="clearfix">
+
+</div>
+  </form>
+
+    </section>
+  </body>
+</html>
